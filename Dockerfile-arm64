@@ -1,4 +1,4 @@
-FROM docker.io/amazoncorretto:21
+FROM docker.io/arm64v8/amazoncorretto:21
 
 ENV JAVA_TOOL_OPTIONS "-XX:MaxRAMPercentage=80"
 
