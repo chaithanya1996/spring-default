@@ -50,13 +50,8 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
+        platforms: linux/amd64,linux/arm64
         push: true
         tags: chaithanya1996/spring-default:latest
 
-    - name: Build and push Arm Image
-      uses: docker/build-push-action@v5
-      with:
-        context: Dockerfile-arm64
-        push: true
-        tags: chaithanya1996/spring-default:latest-arm
 
